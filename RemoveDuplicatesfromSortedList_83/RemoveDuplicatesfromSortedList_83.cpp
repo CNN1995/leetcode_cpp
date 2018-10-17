@@ -1,12 +1,8 @@
 #include <iostream>
 #include <string.h>
 #include <stdlib.h>
-struct ListNode {
-      int val;
-      ListNode *next;
-     ListNode(int x) : val(x), next(NULL) {}
- };
- 
+#include "../header/ListNode.h"
+using namespace std;
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
@@ -23,3 +19,29 @@ public:
         return head;
     }
 };
+
+int main(int argc, char const *argv[])
+{
+    /* code */
+    ListNode* head = (ListNode*)malloc(sizeof(ListNode));
+    for(int i = 0;i < 4; i++){
+        ListNode* p = (ListNode*)malloc(sizeof(ListNode));
+        p->val = i; 
+        p->next = head->next;
+        head->next = p;
+    }
+    head = head->next;
+    ListNode* q = (ListNode*)malloc(sizeof(ListNode));
+    q = head;
+    while(q != NULL){
+        cout << q->val;
+        q = q->next;
+    }
+    cout<< "helloworld";
+    // 清空和缓存区
+    cin.clear();
+    cin.sync();
+    cin.get();
+    return 0;
+   // system("pause");
+}
