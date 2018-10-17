@@ -68,7 +68,7 @@ int main (){
        arr.push_back(0);
        arr.push_back(4);
        arr.push_back(2);
-  int n =  solution.removeElement2(arr, 2);
+  int n =  solution.removeElement1(arr, 2);
   cout << endl;
   cout << "result is: " << endl <<  n;
   int q;
