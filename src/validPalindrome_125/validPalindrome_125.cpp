@@ -74,7 +74,7 @@ int main(int argc, char const *argv[])
     string str;
     cin >> str;
     bool result = s.isPalindrome(str);
-    cout << "result is : " << str;
+    cout << "result is : " << result;
     cout << endl;
     system("pause");
     return 0;
