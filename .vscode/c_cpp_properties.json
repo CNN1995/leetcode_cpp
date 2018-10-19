@@ -8,7 +8,7 @@
                 "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\*",
                 "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\*",
                 "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\*",
-                "${workspaceFolder}/header"
+                "${workspaceFolder}/header/*"
             ],
             "defines": [
                 "_DEBUG",

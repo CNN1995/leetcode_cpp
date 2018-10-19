@@ -8,10 +8,11 @@
         "vector": "cpp",
         "[cpp]": {
             "editor.quickSuggestions": true
-                },
-            "[c]": {
+        },
+        "[c]": {
             "editor.quickSuggestions": true
-                }
+        },
+        "ostream": "cpp"
     },
     "files.autoGuessEncoding": true,
     "C_Cpp.errorSquiggles": "Disabled",
