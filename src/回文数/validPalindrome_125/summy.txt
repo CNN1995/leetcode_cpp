@@ -1,0 +1,7 @@
+# 字符指针 指向String，其中const 不可被省略
+  const  char* str = s.c_str();
+# 指向字符串和字符数组的字符指针 *str 是只读的，其值不能被修改，所以只能通过给一个新的变量赋值的方式来获取运算结果
+ char c = *str + 32;
+# 如果 vector<char> resultStr 的size（）为0 .这是入果取begin或end 再取size（）会返回一个很大的随机数。
+ vector<char>::iterator itPre = resultStr.begin();
+ vector<char>::iterator itTail = resultStr.end() -1  ;

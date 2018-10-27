@@ -48,7 +48,6 @@ public:
             str++;
       }
          if(resultStr.size() == 0){
-      
              return true;
          }
         vector<char>::iterator itPre = resultStr.begin();

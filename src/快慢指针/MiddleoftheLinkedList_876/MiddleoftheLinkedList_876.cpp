@@ -1,6 +1,6 @@
 #include <iostream>
 #include<stdlib.h>
-#include "../../header/ListNode.h"
+#include "../../../header/ListNode.h"
 using namespace std;
 class Solution {
 public:
