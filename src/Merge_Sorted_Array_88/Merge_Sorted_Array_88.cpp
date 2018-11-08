@@ -18,11 +18,6 @@ public:
             }
             cout<< nums1[pos] << "  ";
             pos--;
-          //  cout<< nums1[pos];
-            // if(i<0){
-            //     break;
-            // }
-
         }
         while(j>=0){
             nums1[pos] = nums2[j];
