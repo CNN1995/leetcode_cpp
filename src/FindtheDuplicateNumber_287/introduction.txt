@@ -1,0 +1,40 @@
+那我们也就只能考虑用二分搜索法了，我们在区间[1, n]中搜索，
+首先求出中点mid，然后遍历整个数组，统计所有小于等于mid的数的个数，
+如果个数小于等于mid，则说明重复值在[mid+1, n]之间，反之，
+重复值应在[1, mid-1]之间，然后依次类推，
+直到搜索完成，此时的low就是我们要求的重复值，
+
+
+时间复杂度为O(n)的解法：
+经过热心网友waruzhi的留言提醒还有一种O(n)的解法，并给了参考帖子，
+发现真是一种不错的解法，其核心思想快慢指针在之前的题目
+Linked List Cycle II中就有应用，这里应用的更加巧妙一些，
+由于题目限定了区间[1,n]，所以可以巧妙的利用坐标和数值之间相互转换，
+而由于重复数字的存在，那么一定会形成环，
+我们用快慢指针可以找到环并确定环的起始位置，确实是太巧妙了！
+
+ 
+
+解法二：
+
+
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int slow = 0, fast = 0, t = 0;
+        // 确定是否有环，进入环
+        while (true) {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+            if (slow == fast) break;
+        }
+        // 找环的起点
+        while (true) {
+            slow = nums[slow];
+            t = nums[t];
+            if (slow == t) break;
+        }
+        return slow;
+    }
+};
+复制代码
