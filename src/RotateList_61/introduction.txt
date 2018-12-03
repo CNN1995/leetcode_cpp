@@ -1,0 +1,6 @@
+# 思路
+1、首先遍历链表，获得链表的长度n,并用tail记录最后一个节点
+2、求newK = K%n
+3、从头向后走n-newK个节点，就到达了要断开的节点p，让newHead = p->next，p->next = NULL
+4、让 tail->next = head
+5、return  newHead
